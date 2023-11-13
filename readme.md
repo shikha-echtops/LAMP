@@ -14,17 +14,18 @@ $ sudo apt install php libapache2-mod-php php-mysql
 ```
 $ sudo nano /etc/apache2/sites-enabled/`your_domain`.conf
 ```
-####### Paste the following configuration block.
+###### Paste the following configuration block.
 ```
-# <VirtualHost *:80>
-#   ServerAdmin `shikha23@localhost`
-#   ServerName `your_domain`
-#   ServerAlias `www.your_domain`
-#   DocumentRoot /var/www/`your_domain`
-#   ErrorLog ${APACHE_LOG_DIR}/error.log
-#   CustomLog ${APACHE_LOG_DIR}/access.log combined
-# </VirtualHost> 
+ <VirtualHost *:80>
+   ServerAdmin `shikha23@localhost`
+   ServerName `your_domain`
+   ServerAlias `www.your_domain`
+   DocumentRoot /var/www/`your_domain`
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+ </VirtualHost> 
 ```
+###### Create the directory for ```your_domain```
 ```
 $ sudo mkdir /var/www/`your_domain`
 $ sudo chown -R $USER:$USER /var/www/`your_domain`
