@@ -14,7 +14,7 @@ $ sudo apt install php libapache2-mod-php php-mysql
 ```
 $ sudo nano /etc/apache2/sites-enabled/`your_domain`.conf
 ```
-#######Paste the following configuration block.
+####### Paste the following configuration block.
 ```
 # <VirtualHost *:80>
 #   ServerAdmin `shikha23@localhost`
@@ -31,7 +31,7 @@ $ sudo chown -R $USER:$USER /var/www/`your_domain`
 $ sudo chmod -R 755 /var/www/`your_domain`
 $ nano /var/www/`your_domain`/index.html
 ```
-######Paste this in file HTML.
+###### Paste this in file HTML.
 ```
 <html>
     <head>
@@ -42,12 +42,12 @@ $ nano /var/www/`your_domain`/index.html
     </body>
 </html>
 ```
-#####Restart Apache web server
+##### Restart Apache web server
 ```
 $ sudo systemctl restart apache2
 $ sudo systemctl status apache2
 ```
-######Let's enable file with `a2ensite` tool:
+###### Let's enable file with `a2ensite` tool:
 ```
 $ sudo a2ensite `your_domain`.conf
 
