@@ -3,7 +3,7 @@
 `sudo apt update`
 
 ### Installation
--
+---
 ```
 $ sudo apt install apache2
 $ sudo apt install mysql-server
